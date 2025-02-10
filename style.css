@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: #d3d3d3;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container .cover {
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: #526bd82d;
+}
+
+.container header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 70px;
+    background-color: #ffffff1b;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 15px #72a1de98;
+    z-index: 10;
+}
+
+.container header .left {
+    display: flex;
+    align-items: center;
+}
+
+.container header .left img {
+    width: 40px;
+    margin: 0px 15px;
+    border-radius: 50%;
+}
+
+.container header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #00000053;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px #72a1de63;
+}
+
+.container header ul li {
+    list-style: none;
+}
+
+.container header ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    transition: 0.3s;
+    margin: 0px 10px;
+}
+
+.container header ul li a:hover {
+    text-shadow: 0px 0px 15px #000000;
+}
+
+.container header .social-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.container header .social-icons p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #72a1de;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container header .social-icons p:hover {
+    background-color: #72a1de;
+    color: #000000;
+    box-shadow: 0px 0px 15px #72a1de;
+}
+
+.container .blackhole {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: lighten;
+    z-index: -1;
+}
+
+.container .blackhole video {
+    width: 100%;
+    margin-top: -23.5%;
+}
+
+.container .hero {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .hero .hero-info {
+    position: absolute;
+    left: 5%;
+}
+
+.container .hero .hero-info .title {
+    color: #72a1de;
+    padding: 8px 5px;
+    border-radius: 50px;
+    border: 1px solid #72a1de;
+    width: 240px;
+    background-color: #2200493d;
+    box-shadow: 0px 0px 5px #72a1de84;
+}
+
+.container .hero .hero-info h1 {
+    font-size: 60px;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.container .hero .hero-info p {
+    max-width: 550px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.container .hero .hero-info button {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 35px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #72a1de81;
+    background-color: #2200493d;
+    box-shadow: 0px 0px 5px #72a1de81;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container .hero .hero-info button:hover {
+    box-shadow: 0px 0px 15px #72a1de81;
+}
+
+.container .hero .astronaut {
+    position: absolute;
+    right: 5%;
+    height: 400px;
+    mix-blend-mode: lighten;
+}
+
+.container .about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.container .about-section .info-card {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+}
+
+.container .about-section .info-card h1 {
+    font-size: 55px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container .about-section .info-card p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.gradient {
+    background: linear-gradient(to right, #008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
+    background-size: 200%; /* 200% */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #00000000;
+    animation: gradient 1.5s linear infinite;
+}
+
+@keyframes gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container .blackhole video {
+        margin-top: -20%;
+    }
+
+    .container .hero .hero-info h1 {
+        font-size: 40px;
+        max-width: 400px;
+    }
+
+    .container .hero .hero-info p {
+        max-width: 300px;
+    }
+
+    .container .hero .astronaut {
+        height: 300px;
+    }
+
+    .container .about-section {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .container .about-section .info-card h1 {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container header ul {
+        display: none;
+    }
+
+    .container .blackhole video {
+        margin-top: -11%;
+    }
+
+    .container .about-section {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .container .hero {
+        flex-direction: column;
+    }
+
+    .container .hero .hero-info {
+        bottom: 10px;
+    }
+
+    .container .hero .astronaut {
+        height: 200px;
+        right: 100px;
+        top: 70px;
+    }
+
+    .container {
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .container .background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .container .background-video {
+        width: auto;
+        height: 100%;
+    }
+}

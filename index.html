@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <div class="container">
+        <video src="./videos/galaxy.mp4" class="background-video" muted loop autoplay plays-inline></video>
+        <div class="cover"></div>
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <img src="./images/profile.png" alt="logo">
+                <h2><span style="color: cornflowerblue;">Nanda's</span> Portfolio</h2>
+            </div>
+
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <p><i class="bx bxl-github"></i></p>
+                <p><i class="bx bxl-youtube"></i></p>
+                <p><i class="bx bxl-linkedin"></i></p>
+            </div>
+        </header>
+
+        <div class="blackhole" data-aos="fade-down" data-aos-duration="2000">
+            <video src="./videos/blackhole.mp4" autoplay muted loop plays-inline></video>
+        </div>
+
+        <section class="hero">
+            <div class="hero-info" data-aos="fade-right" data-aos-duration="1000">
+                <div class="title">
+                    <i class="bx bxl-sketch"></i>
+                    Front-End Developer Portfolio
+                </div>
+
+                <h1 data-aos="fade-right" data-aos-duration="3000">Providing <span class="gradient">the best</span>
+                Project <span class="gradient">Experience</span></h1>
+                <p>I'm a front-end developer with the experience in websites, mobile and software development. Check out my projects and skills.</p>
+                <button type="button">
+                    <i class="bx bx-send"></i>
+                    Contact Me
+                </button>
+            </div>
+
+            <img src="./images/astronaut.png" alt="astronaut" class="astronaut" data-aos="zoom-in" data-aos-duration="2000">
+        </section>
+
+        <section class="about-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+            <div class="info-card">
+                <h1 class="gradient">5+</h1>
+                <p>Years of Experience</p>
+            </div>
+            <div class="info-card">
+                <h1 class="gradient">7+</h1>
+                <p>Technical Skills</p>
+            </div>
+            <div class="info-card">
+                <h1 class="gradient">10+</h1>
+                <p>Real Projects</p>
+            </div>
+            <div class="info-card">
+                <h1 class="gradient">1</h1>
+                <p>Startup Founder</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
